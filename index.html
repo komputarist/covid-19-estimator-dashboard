@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <meta charset="utf-8" />
+  <title>COVID-19 Impact Estimator Form</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Build For SDGs Challenge</h1>
+
+    <span>
+      <h2>COVID-19 Impact Estimator</h2>
+    </span>
+    <form class="form">
+      <label for="population">Population</label> <input name="population" placeholder="Enter population" type="text"
+        data-population required />
+
+      <label for="regionName">Region Name</label>
+          <input placeholder="Enter Region" type="text" id="regionName" name="regionName" data-region-name required>
+
+          <label for="averageAge">Average Age (Years)</label>
+          <input type="text" id="averageAge" name="averageAge" data-region-avgAge placeholder="Enter the average age of the region" required>
+
+          <label for="avgDailyIncomeInUSD">Average Daily Income (USD)</label>
+            <input type="text" id="avgDailyIncomeInUSD" data-region-avgDailyIncomeInUSD placeholder="enter average daily income in USD" required>
+
+            <label for="avgDailyIncomePopulation">Percentage of Population With Average Daily Income</label>
+            <input type="text" id="avgDailyIncomePopulation" data-region-avgDailyIncomePopulation placeholder="Enter Percentage Daily Income in Decimal" required>
+
+        <label for="timeToElapse">Time Elapsed</label>
+        <input type="number" id="timeToElapse" name="timeToElapse" placeholder="Enter the time Elapsed"
+          data-time-to-elapse required>
+
+      <label for="reportedCases">Number of Cases Reported</label> <input type="number" name="reportedCases"
+        placeholder="Number of Cases Reported" data-population required />
+
+      <label for="totalHospitalBeds">Total Number of Beds in Hospital</label> <input name="totalHospitalBeds"
+        placeholder="Enter Number of Beds" type="number" data-total-hospital-beds />
+
+      <label for="periodType">Period Type</label>
+      <select name="periodType" id="periodType" data-period-type>
+        <option value="days">days</option>
+        <option value="weeks">weeks</option>
+        <option value="months">months</option>
+      </select>
+      <br />
+      <input type="submit" value="Estimate the Impact" name="submit" id="submit" data-go-estimate />
+
+    </form>
+  </div>
+</body>
+
+</html>
